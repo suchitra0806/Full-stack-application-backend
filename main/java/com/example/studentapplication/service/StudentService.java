@@ -5,6 +5,10 @@ import com.example.studentapplication.model.Student;
 import java.util.List;
 
 public interface StudentService {
-    public Student saveStudent(Student student);
-    public List<Student> getAllStudents();
+    Student addStudent(Student student);
+    List<Student> saveAllStudents(List<Student> students);
+    List<Student> getAllStudents();
+    String deleteStudent(Integer id);
+    Student updateStudent(Student student);
+    Student getStudentById(Integer id);
 }
